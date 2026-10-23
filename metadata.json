@@ -1,0 +1,6 @@
+{
+  "name": "Dnyanu Creation - Luxury Jewellery",
+  "description": "Premium Indian jewellery e-commerce platform featuring handcrafted collections, bridal jewellery, 925 hallmarked silver, seamless checkout, and customer rewards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

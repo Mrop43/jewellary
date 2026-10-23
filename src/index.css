@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FCFBF7;
+    color: #1C1917;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5EFEB;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B48C2B;
+}
+
+/* Shimmer animation for luxury gold effects */
+@keyframes goldShimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.gold-shimmer {
+  background: linear-gradient(90deg, #b38728 0%, #fbf5b7 50%, #b38728 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: goldShimmer 6s infinite linear;
+}
